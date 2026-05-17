@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <meta name="theme-color" content="#000000">
-<title>LUDOVICO MORANDO â€” SYSTEM v2.4</title>
+<title>LUDOVICO MORANDO — SYSTEM v2.4</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
 <style>
@@ -16,10 +16,10 @@
   --fg:         #e8e8e8;
   --accent:     #00ff88;
   --red:        #ff004c;
-  /* MODIFICA 3 â€” colori piÃ¹ chiari per miglior contrasto */
-  --dim:        #666666;   /* era #3a3a3a â†’ ora leggibile su nero */
-  --mid:        #999999;   /* era #777777 â†’ +1 step di luminositÃ  */
-  --border:     #2a2a2a;   /* era #1e1e1e â†’ leggermente piÃ¹ visibile */
+  /* MODIFICA 3 — colori più chiari per miglior contrasto */
+  --dim:        #666666;   /* era #3a3a3a → ora leggibile su nero */
+  --mid:        #999999;   /* era #777777 → +1 step di luminosità */
+  --border:     #2a2a2a;   /* era #1e1e1e → leggermente più visibile */
   --win-bg:     #080808;
   --win-bd:     #2c2c2c;
   --font:       'JetBrains Mono', monospace;
@@ -153,7 +153,7 @@ body {
 
 /* ============================================================
    LEFT PANEL
-   MODIFICA 3 â€” font +1.5px, colori schiariti
+   MODIFICA 3 — font +1.5px, colori schiariti
    ============================================================ */
 #left-panel { display: none; }
 @media (min-width: 768px) {
@@ -172,7 +172,7 @@ body {
 }
 
 .lp-label {
-  /* MODIFICA 3: era 10px â†’ 11.5px; era var(--dim) â†’ piÃ¹ visibile */
+  /* MODIFICA 3: era 10px → 11.5px; era var(--dim) → più visibile */
   font-size: 11.5px; color: #888888;
   letter-spacing: .16em; padding: 4px 0;
   margin-bottom: 6px; border-bottom: 1px solid var(--border);
@@ -184,7 +184,7 @@ body {
   display: flex; align-items: center; gap: 7px;
   padding: 9px 8px; border: 1px solid transparent;
   cursor: pointer; user-select: none;
-  /* MODIFICA 3: era 13px â†’ 14px; era var(--mid) â†’ #aaa */
+  /* MODIFICA 3: era 13px → 14px; era var(--mid) → #aaa */
   font-size: 14px; color: #aaaaaa; letter-spacing: .04em;
   transition: background .12s, border-color .12s, color .12s;
   flex-shrink: 0;
@@ -202,7 +202,7 @@ body {
 
 .lp-cmds {
   margin-top: 10px; flex-shrink: 0;
-  /* MODIFICA 3: era 11.5px â†’ 13px */
+  /* MODIFICA 3: era 11.5px → 13px */
   font-size: 13px; color: #888; line-height: 2.0;
 }
 .lp-cmds .lp-sep {
@@ -214,18 +214,18 @@ body {
   display: flex; gap: 8px; align-items: baseline; padding: 1px 0;
 }
 .lp-cmds .lp-cmd {
-  /* MODIFICA 3: era var(--fg) â†’ bianco puro per contrasto */
+  /* MODIFICA 3: era var(--fg) → bianco puro per contrasto */
   color: #dddddd; min-width: 72px; flex-shrink: 0;
   cursor: pointer; transition: color .12s;
 }
 .lp-cmds .lp-cmd:hover { color: var(--accent); }
 .lp-cmds .lp-desc {
-  /* MODIFICA 3: era var(--dim) â†’ piÃ¹ leggibile */
+  /* MODIFICA 3: era var(--dim) → più leggibile */
   color: #888888; font-size: 12px;
 }
 .lp-cmds .lp-footer {
   display: block; margin-top: 8px;
-  /* MODIFICA 3: era 10px â†’ 11px */
+  /* MODIFICA 3: era 10px → 11px */
   font-size: 11px; color: #777; line-height: 1.7;
 }
 
@@ -291,7 +291,7 @@ body {
   #icon-canvas { display: block; padding: 0; }
 }
 
-/* â”€â”€ DESK ICON â”€â”€ */
+/* ── DESK ICON ── */
 .desk-icon {
   display: flex; flex-direction: column; align-items: center;
   gap: 6px; padding: 10px 8px;
@@ -357,7 +357,7 @@ body {
 
 /* ============================================================
    RIGHT INFO PANEL
-   MODIFICA 3 â€” font +1-2px, colori schiariti
+   MODIFICA 3 — font +1-2px, colori schiariti
    ============================================================ */
 #info-panel { display: none; }
 @media (min-width: 1100px) {
@@ -366,13 +366,13 @@ body {
     position: absolute; top: 0; right: 0; bottom: 0;
     width: var(--right-w); border-left: 1px solid var(--border);
     background: rgba(6,6,6,.97);
-    /* MODIFICA 3: era 12px â†’ 13px */
+    /* MODIFICA 3: era 12px → 13px */
     padding: 20px 18px; font-size: 13px; color: #999;
     overflow-y: auto; gap: 0; z-index: 3;
   }
   .ip-section { margin-bottom: 20px; }
   .ip-title  {
-    /* MODIFICA 3: era 12px â†’ 13px */
+    /* MODIFICA 3: era 12px → 13px */
     color: var(--fg); font-size: 13px; letter-spacing: .12em; margin-bottom: 14px;
     padding-bottom: 8px; border-bottom: 1px solid var(--border);
   }
@@ -380,17 +380,17 @@ body {
                padding: 6px 0; border-bottom: 1px solid #1a1a1a; gap: 10px; }
   .ip-key    { color: var(--accent); flex-shrink: 0; font-size: 12px; letter-spacing: .1em; }
   .ip-val    {
-    /* MODIFICA 3: era 12px â†’ 13px */
+    /* MODIFICA 3: era 12px → 13px */
     color: var(--fg); text-align: right; font-size: 13px;
   }
   .ip-hint   {
-    /* MODIFICA 3: era 11px â†’ 12px; era var(--dim) â†’ #888 */
+    /* MODIFICA 3: era 11px → 12px; era var(--dim) → #888 */
     margin-top: 18px; font-size: 12px; color: #888; line-height: 1.9;
   }
   .ip-tag    {
     display: inline-block; border: 1px solid var(--border);
     padding: 2px 7px;
-    /* MODIFICA 3: era 10px â†’ 11px; era var(--mid) â†’ #999 */
+    /* MODIFICA 3: era 10px → 11px; era var(--mid) → #999 */
     font-size: 11px; color: #999;
     margin: 2px 2px 0 0; letter-spacing: .08em;
   }
@@ -423,7 +423,7 @@ body {
               inset 0 1px 0 rgba(0,255,136,.03);
 }
 .win::before {
-  content: 'â”Œâ”€ ' attr(data-id) ' â”€';
+  content: '┌─ ' attr(data-id) ' ─';
   position: absolute; top: -1px; left: -1px;
   font-size: 9px; color: var(--dim); background: var(--bg);
   padding: 0 4px; pointer-events: none; white-space: nowrap; letter-spacing: 0;
@@ -593,10 +593,10 @@ body {
 <div id="crt"></div>
 <div id="toast"></div>
 
-<!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• BOOT â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
+<!-- ══════════════════════ BOOT ══════════════════════ -->
 <div id="boot">
-  <div class="boot-hdr glitch" data-t="LM_OS v2.4.1 â€” PORTFOLIO SYSTEM">
-    LM_OS v2.4.1 â€” PORTFOLIO SYSTEM
+  <div class="boot-hdr glitch" data-t="LM_OS v2.4.1 — PORTFOLIO SYSTEM">
+    LM_OS v2.4.1 — PORTFOLIO SYSTEM
   </div>
   <div class="boot-log" id="blog"></div>
   <div class="boot-prog">
@@ -605,21 +605,21 @@ body {
   </div>
 </div>
 
-<!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• MAIN â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
+<!-- ══════════════════════ MAIN ══════════════════════ -->
 <div id="main">
 
   <div id="statusbar">
     <span class="sb-name">LM_OS</span>
-    <span class="sb-sep">â”‚</span>
-    <span class="sb-role">ludovico morando â€” creative system</span>
-    <span class="sb-sep">â”‚</span>
-    <span class="sb-status" id="sbst">â— ONLINE</span>
+    <span class="sb-sep">│</span>
+    <span class="sb-role">ludovico morando — creative system</span>
+    <span class="sb-sep">│</span>
+    <span class="sb-status" id="sbst">● ONLINE</span>
     <span id="sb-clock"></span>
   </div>
 
   <div id="desktop">
 
-    <!-- â•â• LEFT PANEL â•â• -->
+    <!-- ══ LEFT PANEL ══ -->
     <div id="left-panel">
       <div class="lp-label">// system/</div>
       <div class="lp-file" data-open="about">
@@ -652,7 +652,7 @@ body {
       </div>
     </div>
 
-    <!-- â•â• RIGHT INFO PANEL â‰¥1100px â•â• -->
+    <!-- ══ RIGHT INFO PANEL ≥1100px ══ -->
     <div id="info-panel">
       <div class="ip-section">
         <div class="ip-title">// SYSTEM INFO</div>
@@ -660,7 +660,7 @@ body {
         <div class="ip-row"><span class="ip-key">ROLE</span><span class="ip-val">Senior Designer</span></div>
         <div class="ip-row"><span class="ip-key">EMPLOYER</span><span class="ip-val">Monolab Studio</span></div>
         <div class="ip-row"><span class="ip-key">LOCATION</span><span class="ip-val">Milan, IT</span></div>
-        <div class="ip-row"><span class="ip-key">STATUS</span><span class="ip-val" style="color:var(--accent)">â— available</span></div>
+        <div class="ip-row"><span class="ip-key">STATUS</span><span class="ip-val" style="color:var(--accent)">● available</span></div>
       </div>
       <div class="ip-section">
         <div class="ip-title">// SPECIALTIES</div>
@@ -678,158 +678,158 @@ body {
         <div class="ip-row"><span class="ip-key">IG</span><span class="ip-val">@ludovico_m</span></div>
       </div>
       <div class="ip-hint">
-        type <span style="color:var(--accent)">help</span> in terminal â†“<br>
+        type <span style="color:var(--accent)">help</span> in terminal ↓<br>
         double-click files to open
       </div>
     </div>
 
-    <!-- â•â• DESKTOP CONTENT (ASCII + ICONS) â•â• -->
+    <!-- ══ DESKTOP CONTENT (ASCII + ICONS) ══ -->
     <div id="desktop-content">
 
       <div id="ludo-ascii" aria-label="LUDOVICO">
-<span class="al">â–ˆâ–ˆâ•—     â–ˆâ–ˆâ•—   â–ˆâ–ˆâ•—â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ•—  â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ•— â–ˆâ–ˆâ•—   â–ˆâ–ˆâ•—â–ˆâ–ˆâ•— â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ•— â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ•— </span>
-<span class="al">â–ˆâ–ˆâ•‘     â–ˆâ–ˆâ•‘   â–ˆâ–ˆâ•‘â–ˆâ–ˆâ•”â•â•â–ˆâ–ˆâ•—â–ˆâ–ˆâ•”â•â•â•â–ˆâ–ˆâ•—â–ˆâ–ˆâ•‘   â–ˆâ–ˆâ•‘â–ˆâ–ˆâ•‘â–ˆâ–ˆâ•”â•â•â•â•â•â–ˆâ–ˆâ•”â•â•â•â–ˆâ–ˆâ•—</span>
-<span class="al">â–ˆâ–ˆâ•‘     â–ˆâ–ˆâ•‘   â–ˆâ–ˆâ•‘â–ˆâ–ˆâ•‘  â–ˆâ–ˆâ•‘â–ˆâ–ˆâ•‘   â–ˆâ–ˆâ•‘â–ˆâ–ˆâ•‘   â–ˆâ–ˆâ•‘â–ˆâ–ˆâ•‘â–ˆâ–ˆâ•‘     â–ˆâ–ˆâ•‘   â–ˆâ–ˆâ•‘</span>
-<span class="al">â–ˆâ–ˆâ•‘     â–ˆâ–ˆâ•‘   â–ˆâ–ˆâ•‘â–ˆâ–ˆâ•‘  â–ˆâ–ˆâ•‘â–ˆâ–ˆâ•‘   â–ˆâ–ˆâ•‘â•šâ–ˆâ–ˆâ•— â–ˆâ–ˆâ•”â•â–ˆâ–ˆâ•‘â–ˆâ–ˆâ•‘     â–ˆâ–ˆâ•‘   â–ˆâ–ˆâ•‘</span>
-<span class="al">â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ•—â•šâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ•”â•â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ•”â•â•šâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ•”â• â•šâ–ˆâ–ˆâ–ˆâ–ˆâ•”â• â–ˆâ–ˆâ•‘â•šâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ•—â•šâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ•”â•</span>
-<span class="al">â•šâ•â•â•â•â•â•â• â•šâ•â•â•â•â•â• â•šâ•â•â•â•â•â•  â•šâ•â•â•â•â•â•   â•šâ•â•â•â•  â•šâ•â• â•šâ•â•â•â•â•â• â•šâ•â•â•â•â•â•</span>
+<span class="al">██╗     ██╗   ██╗██████╗  ██████╗ ██╗   ██╗██╗ ██████╗ ██████╗ </span>
+<span class="al">██║     ██║   ██║██╔══██╗██╔═══██╗██║   ██║██║██╔════╝██╔═══██╗</span>
+<span class="al">██║     ██║   ██║██║  ██║██║   ██║██║   ██║██║██║     ██║   ██║</span>
+<span class="al">██║     ██║   ██║██║  ██║██║   ██║╚██╗ ██╔╝██║██║     ██║   ██║</span>
+<span class="al">███████╗╚██████╔╝██████╔╝╚██████╔╝ ╚████╔╝ ██║╚██████╗╚██████╔╝</span>
+<span class="al">╚══════╝ ╚═════╝ ╚═════╝  ╚═════╝   ╚═══╝  ╚═╝ ╚═════╝ ╚═════╝</span>
       </div>
 
-      <!-- ICON CANVAS â€” 15 project folders -->
+      <!-- ICON CANVAS — 15 project folders -->
       <div id="icon-canvas">
 
         <div class="desk-icon" data-proj="brand">
-          <span class="di-folder">  â•­â”€â”€â”€â”€â”€â”€â”€â”€â•®
- â•­â”¤ .exe   â”œâ•®
- â”‚â•°â”€â”€â”€â”€â”€â”€â”€â”€â•¯â”‚
- â”‚          â”‚
- â•°â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â•¯</span>
+          <span class="di-folder">  ╭────────╮
+ ╭┤ .exe   ├╮
+ │╰────────╯│
+ │          │
+ ╰──────────╯</span>
           <span class="di-name">brand_identity<span class="di-ext">.exe</span></span>
         </div>
 
         <div class="desk-icon" data-proj="campaign">
-          <span class="di-folder">  â•­â”€â”€â”€â”€â”€â”€â”€â”€â•®
- â•­â”¤ .sys   â”œâ•®
- â”‚â•°â”€â”€â”€â”€â”€â”€â”€â”€â•¯â”‚
- â”‚          â”‚
- â•°â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â•¯</span>
+          <span class="di-folder">  ╭────────╮
+ ╭┤ .sys   ├╮
+ │╰────────╯│
+ │          │
+ ╰──────────╯</span>
           <span class="di-name">visual_campaign<span class="di-ext">.sys</span></span>
         </div>
 
         <div class="desk-icon" data-proj="type">
-          <span class="di-folder">  â•­â”€â”€â”€â”€â”€â”€â”€â”€â•®
- â•­â”¤ .txt   â”œâ•®
- â”‚â•°â”€â”€â”€â”€â”€â”€â”€â”€â•¯â”‚
- â”‚          â”‚
- â•°â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â•¯</span>
+          <span class="di-folder">  ╭────────╮
+ ╭┤ .txt   ├╮
+ │╰────────╯│
+ │          │
+ ╰──────────╯</span>
           <span class="di-name">type_experiments<span class="di-ext">.txt</span></span>
         </div>
 
         <div class="desk-icon" data-proj="motion">
-          <span class="di-folder">  â•­â”€â”€â”€â”€â”€â”€â”€â”€â•®
- â•­â”¤ .dll   â”œâ•®
- â”‚â•°â”€â”€â”€â”€â”€â”€â”€â”€â•¯â”‚
- â”‚          â”‚
- â•°â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â•¯</span>
+          <span class="di-folder">  ╭────────╮
+ ╭┤ .dll   ├╮
+ │╰────────╯│
+ │          │
+ ╰──────────╯</span>
           <span class="di-name">motion_design<span class="di-ext">.dll</span></span>
         </div>
 
         <div class="desk-icon" data-proj="editorial">
-          <span class="di-folder">  â•­â”€â”€â”€â”€â”€â”€â”€â”€â•®
- â•­â”¤ .raw   â”œâ•®
- â”‚â•°â”€â”€â”€â”€â”€â”€â”€â”€â•¯â”‚
- â”‚          â”‚
- â•°â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â•¯</span>
+          <span class="di-folder">  ╭────────╮
+ ╭┤ .raw   ├╮
+ │╰────────╯│
+ │          │
+ ╰──────────╯</span>
           <span class="di-name">editorial_raw<span class="di-ext">.raw</span></span>
         </div>
 
         <div class="desk-icon" data-proj="packaging">
-          <span class="di-folder">  â•­â”€â”€â”€â”€â”€â”€â”€â”€â•®
- â•­â”¤ .pkg   â”œâ•®
- â”‚â•°â”€â”€â”€â”€â”€â”€â”€â”€â•¯â”‚
- â”‚          â”‚
- â•°â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â•¯</span>
+          <span class="di-folder">  ╭────────╮
+ ╭┤ .pkg   ├╮
+ │╰────────╯│
+ │          │
+ ╰──────────╯</span>
           <span class="di-name">packaging_sys<span class="di-ext">.pkg</span></span>
         </div>
 
         <div class="desk-icon" data-proj="wayfinding">
-          <span class="di-folder">  â•­â”€â”€â”€â”€â”€â”€â”€â”€â•®
- â•­â”¤ .nav   â”œâ•®
- â”‚â•°â”€â”€â”€â”€â”€â”€â”€â”€â•¯â”‚
- â”‚          â”‚
- â•°â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â•¯</span>
+          <span class="di-folder">  ╭────────╮
+ ╭┤ .nav   ├╮
+ │╰────────╯│
+ │          │
+ ╰──────────╯</span>
           <span class="di-name">wayfinding<span class="di-ext">.nav</span></span>
         </div>
 
         <div class="desk-icon" data-proj="artbook">
-          <span class="di-folder">  â•­â”€â”€â”€â”€â”€â”€â”€â”€â•®
- â•­â”¤ .pdf   â”œâ•®
- â”‚â•°â”€â”€â”€â”€â”€â”€â”€â”€â•¯â”‚
- â”‚          â”‚
- â•°â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â•¯</span>
+          <span class="di-folder">  ╭────────╮
+ ╭┤ .pdf   ├╮
+ │╰────────╯│
+ │          │
+ ╰──────────╯</span>
           <span class="di-name">art_book_vol2<span class="di-ext">.pdf</span></span>
         </div>
 
         <div class="desk-icon" data-proj="poster">
-          <span class="di-folder">  â•­â”€â”€â”€â”€â”€â”€â”€â”€â•®
- â•­â”¤  .ps   â”œâ•®
- â”‚â•°â”€â”€â”€â”€â”€â”€â”€â”€â•¯â”‚
- â”‚          â”‚
- â•°â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â•¯</span>
+          <span class="di-folder">  ╭────────╮
+ ╭┤  .ps   ├╮
+ │╰────────╯│
+ │          │
+ ╰──────────╯</span>
           <span class="di-name">poster_series<span class="di-ext">.ps</span></span>
         </div>
 
         <div class="desk-icon" data-proj="uikit">
-          <span class="di-folder">  â•­â”€â”€â”€â”€â”€â”€â”€â”€â•®
- â•­â”¤ .fig   â”œâ•®
- â”‚â•°â”€â”€â”€â”€â”€â”€â”€â”€â•¯â”‚
- â”‚          â”‚
- â•°â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â•¯</span>
+          <span class="di-folder">  ╭────────╮
+ ╭┤ .fig   ├╮
+ │╰────────╯│
+ │          │
+ ╰──────────╯</span>
           <span class="di-name">ui_design_kit<span class="di-ext">.fig</span></span>
         </div>
 
         <div class="desk-icon" data-proj="logoarchive">
-          <span class="di-folder">  â•­â”€â”€â”€â”€â”€â”€â”€â”€â•®
- â•­â”¤  .ai   â”œâ•®
- â”‚â•°â”€â”€â”€â”€â”€â”€â”€â”€â•¯â”‚
- â”‚          â”‚
- â•°â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â•¯</span>
+          <span class="di-folder">  ╭────────╮
+ ╭┤  .ai   ├╮
+ │╰────────╯│
+ │          │
+ ╰──────────╯</span>
           <span class="di-name">logo_archive<span class="di-ext">.ai</span></span>
         </div>
 
         <div class="desk-icon" data-proj="annual">
-          <span class="di-folder">  â•­â”€â”€â”€â”€â”€â”€â”€â”€â•®
- â•­â”¤ .doc   â”œâ•®
- â”‚â•°â”€â”€â”€â”€â”€â”€â”€â”€â•¯â”‚
- â”‚          â”‚
- â•°â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â•¯</span>
+          <span class="di-folder">  ╭────────╮
+ ╭┤ .doc   ├╮
+ │╰────────╯│
+ │          │
+ ╰──────────╯</span>
           <span class="di-name">annual_report<span class="di-ext">.doc</span></span>
         </div>
 
         <div class="desk-icon" data-proj="spatial">
-          <span class="di-folder">  â•­â”€â”€â”€â”€â”€â”€â”€â”€â•®
- â•­â”¤  .3d   â”œâ•®
- â”‚â•°â”€â”€â”€â”€â”€â”€â”€â”€â•¯â”‚
- â”‚          â”‚
- â•°â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â•¯</span>
+          <span class="di-folder">  ╭────────╮
+ ╭┤  .3d   ├╮
+ │╰────────╯│
+ │          │
+ ╰──────────╯</span>
           <span class="di-name">spatial_brand<span class="di-ext">.3d</span></span>
         </div>
 
         <div class="desk-icon" data-proj="digital">
-          <span class="di-folder">  â•­â”€â”€â”€â”€â”€â”€â”€â”€â•®
- â•­â”¤  .js   â”œâ•®
- â”‚â•°â”€â”€â”€â”€â”€â”€â”€â”€â•¯â”‚
- â”‚          â”‚
- â•°â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â•¯</span>
+          <span class="di-folder">  ╭────────╮
+ ╭┤  .js   ├╮
+ │╰────────╯│
+ │          │
+ ╰──────────╯</span>
           <span class="di-name">digital_campaign<span class="di-ext">.js</span></span>
         </div>
 
         <div class="desk-icon" data-proj="identity2">
-          <span class="di-folder">  â•­â”€â”€â”€â”€â”€â”€â”€â”€â•®
- â•­â”¤ .run   â”œâ•®
- â”‚â•°â”€â”€â”€â”€â”€â”€â”€â”€â•¯â”‚
- â”‚          â”‚
- â•°â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â•¯</span>
+          <span class="di-folder">  ╭────────╮
+ ╭┤ .run   ├╮
+ │╰────────╯│
+ │          │
+ ╰──────────╯</span>
           <span class="di-name">identity_system<span class="di-ext">.run</span></span>
         </div>
 
@@ -850,24 +850,24 @@ body {
       autocomplete="off" autocorrect="off"
       autocapitalize="off" spellcheck="false"
       enterkeyhint="send">
-    <span id="term-copyright">// Â© 2026 LUDOVICO MORANDO â€” ALL RIGHTS RESERVED //</span>
+    <span id="term-copyright">// © 2026 LUDOVICO MORANDO — ALL RIGHTS RESERVED //</span>
   </div>
 
 </div><!-- /main -->
 
 <script>
 'use strict';
-/* â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+/* ═══════════════════════════════════════
    UTILS
-â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */
+═══════════════════════════════════════ */
 const $ = id => document.getElementById(id);
 const isMob   = () => window.innerWidth < 768;
 const isTouch = () => window.matchMedia('(hover:none)').matches;
 function escH(s){ return String(s).replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c])); }
 
-/* â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+/* ═══════════════════════════════════════
    CURSOR
-â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */
+═══════════════════════════════════════ */
 const curEl = $('cursor');
 let cx=0,cy=0,mx=0,my=0;
 if(!isTouch()){
@@ -883,9 +883,9 @@ if(!isTouch()){
   })();
 }
 
-/* â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+/* ═══════════════════════════════════════
    CLOCK
-â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */
+═══════════════════════════════════════ */
 const clkEl=$('sb-clock');
 function tick(){
   const n=new Date(), p=v=>String(v).padStart(2,'0');
@@ -893,9 +893,9 @@ function tick(){
 }
 tick(); setInterval(tick,1000);
 
-/* â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+/* ═══════════════════════════════════════
    TOAST
-â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */
+═══════════════════════════════════════ */
 const toastEl=$('toast');
 let toastT;
 function toast(msg){
@@ -903,34 +903,34 @@ function toast(msg){
   clearTimeout(toastT); toastT=setTimeout(()=>toastEl.classList.remove('show'),2800);
 }
 
-/* â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+/* ═══════════════════════════════════════
    GLITCH
-â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */
+═══════════════════════════════════════ */
 function glitch(el){ if(!el)return; el.classList.add('go'); setTimeout(()=>el.classList.remove('go'),450); }
 const bootHdr=document.querySelector('.boot-hdr');
 
-/* â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+/* ═══════════════════════════════════════
    BOOT
-â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */
+═══════════════════════════════════════ */
 const blogEl=$('blog'), pbarEl=$('pbar'), ppctEl=$('ppct');
 const bootEl=$('boot'), mainEl=$('main'), mobHint=$('mob-hint');
 
 const BOOT=[
-  {t:'BIOS v1.4.2 â€” initializing registers...',      c:'',    d:0},
-  {t:'CPU: LM-CORE 4.0GHz Ã— 8 â€” OK',                c:'ok',  d:200},
-  {t:'RAM: 32GB DDR5 â€” OK',                          c:'ok',  d:360},
+  {t:'BIOS v1.4.2 — initializing registers...',      c:'',    d:0},
+  {t:'CPU: LM-CORE 4.0GHz × 8 — OK',                c:'ok',  d:200},
+  {t:'RAM: 32GB DDR5 — OK',                          c:'ok',  d:360},
   {t:'STORAGE: scanning portfolio.sys ...',          c:'warn',d:500},
-  {t:'STORAGE: 15 project files found â€” OK',         c:'ok',  d:780},
-  {t:'NETWORK: connecting reality.net â€” OK',         c:'ok',  d:960},
-  {t:'GPU: creative_engine v9 â€” OK',                 c:'ok',  d:1130},
-  {t:'WARN: idealism overflow â€” non-critical',       c:'warn',d:1300},
+  {t:'STORAGE: 15 project files found — OK',         c:'ok',  d:780},
+  {t:'NETWORK: connecting reality.net — OK',         c:'ok',  d:960},
+  {t:'GPU: creative_engine v9 — OK',                 c:'ok',  d:1130},
+  {t:'WARN: idealism overflow — non-critical',       c:'warn',d:1300},
   {t:'Loading modules...',                           c:'',    d:1470},
   {t:'  [OK] typography.mod',                        c:'ok',  d:1600},
   {t:'  [OK] color_theory.mod',                      c:'ok',  d:1720},
   {t:'  [OK] motion_engine.mod',                     c:'ok',  d:1840},
-  {t:'  [!!] perfectionism.mod â€” always running',    c:'warn',d:1960},
-  {t:'Mounting /projects â€” 15 entries',              c:'',    d:2180},
-  {t:'AUTH: ludovico.morando â€” GRANTED',             c:'ok',  d:2440},
+  {t:'  [!!] perfectionism.mod — always running',    c:'warn',d:1960},
+  {t:'Mounting /projects — 15 entries',              c:'',    d:2180},
+  {t:'AUTH: ludovico.morando — GRANTED',             c:'ok',  d:2440},
   {t:'',                                             c:'',    d:2620},
   {t:'> WELCOME TO LM_OS v2.4.1',                   c:'ok',  d:2720},
 ];
@@ -960,15 +960,15 @@ function launch(){
     mainEl.classList.add('on');
     glitch(bootHdr);
     if(isMob()) mobHint.style.display='block';
-    toast('SYSTEM READY â€” '+(isMob()?'tap files to open':'double-click files or type commands'));
+    toast('SYSTEM READY — '+(isMob()?'tap files to open':'double-click files or type commands'));
     animateLudoAscii();
     placeIconsRandomly();
   },800);
 }
 
-/* â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+/* ═══════════════════════════════════════
    ASCII LUDOVICO
-â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */
+═══════════════════════════════════════ */
 function animateLudoAscii(){
   const lines=document.querySelectorAll('#ludo-ascii .al');
   lines.forEach((ln,i)=>{
@@ -981,9 +981,9 @@ function animateLudoAscii(){
   });
 }
 
-/* â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+/* ═══════════════════════════════════════
    RANDOM NON-OVERLAPPING ICON PLACEMENT
-â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */
+═══════════════════════════════════════ */
 function placeIconsRandomly(){
   if(isMob()){ animateDesktopIcons(); return; }
 
@@ -1024,49 +1024,49 @@ function animateDesktopIcons(){
   });
 }
 
-/* â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+/* ═══════════════════════════════════════
    STATUS AMBIENT
-â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */
+═══════════════════════════════════════ */
 const sbstEl=$('sbst');
-const STATES=['â— ONLINE','â— PROCESSING','â— IDLE','â— RENDERING','â— ONLINE','â— THINKING','â— ONLINE'];
+const STATES=['● ONLINE','● PROCESSING','● IDLE','● RENDERING','● ONLINE','● THINKING','● ONLINE'];
 let si=0;
 setInterval(()=>{si=(si+1)%STATES.length;sbstEl.textContent=STATES[si];},5200);
 setInterval(()=>{if(Math.random()<.25)glitch(bootHdr);},10000);
 
-/* â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
-   PROJECT DATA â€” tutti e 15 i progetti
-â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */
+/* ═══════════════════════════════════════
+   PROJECT DATA — tutti e 15 i progetti
+═══════════════════════════════════════ */
 const PROJS={
-  /* â”€â”€ ORIGINALI â”€â”€ */
+  /* ── ORIGINALI ── */
   brand:{
     name:'Brand Identity',ext:'.exe',
     type:'BRANDING / IDENTITY DESIGN',
     client:'Forma Studio',year:'2024',duration:'6 weeks',role:'Lead Designer',
-    desc:'Complete visual identity system for an <strong>architecture studio based in Milan</strong>. Explores the intersection of brutalism and digital precision â€” a mark that lives equally well on a business card and a 20-meter building facade.',
+    desc:'Complete visual identity system for an <strong>architecture studio based in Milan</strong>. Explores the intersection of brutalism and digital precision — a mark that lives equally well on a business card and a 20-meter building facade.',
     tags:['IDENTITY','LOGO','SYSTEM','PRINT','DIGITAL'],
     art:`
-  â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-  â”‚  â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ•—  â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ•—  â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ•—â”‚
-  â”‚  â–ˆâ–ˆâ•”â•â•â•â•â•â• â–ˆâ–ˆâ•”â•â•â•â–ˆâ–ˆâ•—â–ˆâ–ˆâ•”â•â•â–ˆâ–ˆâ•—â”‚
-  â”‚  â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ•—    â–ˆâ–ˆâ•‘   â–ˆâ–ˆâ•‘â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ•”â•â”‚
-  â”‚  â–ˆâ–ˆâ•”â•â•â•    â–ˆâ–ˆâ•‘   â–ˆâ–ˆâ•‘â–ˆâ–ˆâ•”â•â•â–ˆâ–ˆâ•—â”‚
-  â”‚  â–ˆâ–ˆâ•‘       â•šâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ•”â•â–ˆâ–ˆâ•‘  â–ˆâ–ˆâ•‘â”‚
-  â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜`
+  ┌──────────────────────────────┐
+  │  ████████╗  ██████╗  ██████╗│
+  │  ██╔═════╝ ██╔═══██╗██╔══██╗│
+  │  █████╗    ██║   ██║██████╔╝│
+  │  ██╔══╝    ██║   ██║██╔══██╗│
+  │  ██║       ╚██████╔╝██║  ██║│
+  └──────────────────────────────┘`
   },
   campaign:{
     name:'Visual Campaign',ext:'.sys',
     type:'ART DIRECTION / CAMPAIGN',
     client:'Notte Records',year:'2024',duration:'3 months',role:'Art Director',
-    desc:'Art direction for a <strong>Berlin-based electronic music label</strong>. Photography direction, poster series, social system. Concept: duality â€” raw and refined, loud and silent. 48 touchpoints across physical and digital.',
+    desc:'Art direction for a <strong>Berlin-based electronic music label</strong>. Photography direction, poster series, social system. Concept: duality — raw and refined, loud and silent. 48 touchpoints across physical and digital.',
     tags:['ART DIRECTION','PHOTOGRAPHY','CAMPAIGN','MUSIC'],
     art:`
-  â–‘â–‘â–‘â–‘â–‘â–‘â–‘â–‘â–‘â–‘â–‘â–‘â–‘â–‘â–‘â–‘â–‘â–‘â–‘â–‘â–‘â–‘â–‘â–‘â–‘â–‘â–‘â–‘â–‘â–‘
-  â–‘  NOTTE  RECORDS  2024       â–‘
-  â–‘  â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€  â–‘
-  â–‘  A/W SEASONAL CAMPAIGN      â–‘
-  â–‘  48 TOUCHPOINTS             â–‘
-  â–‘  BERLIN Ã— MILAN Ã— DIGITAL   â–‘
-  â–‘â–‘â–‘â–‘â–‘â–‘â–‘â–‘â–‘â–‘â–‘â–‘â–‘â–‘â–‘â–‘â–‘â–‘â–‘â–‘â–‘â–‘â–‘â–‘â–‘â–‘â–‘â–‘â–‘â–‘`
+  ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+  ░  NOTTE  RECORDS  2024       ░
+  ░  ─────────────────────────  ░
+  ░  A/W SEASONAL CAMPAIGN      ░
+  ░  48 TOUCHPOINTS             ░
+  ░  BERLIN × MILAN × DIGITAL   ░
+  ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░`
   },
   type:{
     name:'Type Experiments',ext:'.txt',
@@ -1076,13 +1076,13 @@ const PROJS={
     tags:['TYPOGRAPHY','VARIABLE','EXPERIMENTAL','EXHIBITION'],
     art:`
   AaBbCcDdEeFfGgHh
-  â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
-  â–“â–“  â–“â–“â–“  â–“â–“â–“â–“
-  â–“â–“â–“â–“â–“ â–“  â–“  â–“
-  â–“â–“  â–“ â–“  â–“â–“â–“â–“
-  â–“â–“  â–“ â–“  â–“
-  â–“â–“  â–“â–“â–“  â–“
-  â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€`
+  ─────────────────
+  ▓▓  ▓▓▓  ▓▓▓▓
+  ▓▓▓▓▓ ▓  ▓  ▓
+  ▓▓  ▓ ▓  ▓▓▓▓
+  ▓▓  ▓ ▓  ▓
+  ▓▓  ▓▓▓  ▓
+  ─────────────────`
   },
   motion:{
     name:'Motion Design',ext:'.dll',
@@ -1092,11 +1092,11 @@ const PROJS={
     tags:['MOTION','ANIMATION','UI','GENERATIVE','AFTER EFFECTS'],
     art:`
   frame 001/240
-  â”œâ”€ [â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–‘â–‘â–‘â–‘â–‘] 68%
+  ├─ [████████████░░░░░] 68%
   frame 002/240
-  â”œâ”€ [â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–‘â–‘â–‘â–‘] 74%
+  ├─ [█████████████░░░░] 74%
   frame 003/240
-  â””â”€ [â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆ] DONE`
+  └─ [█████████████████] DONE`
   },
   editorial:{
     name:'Editorial Raw',ext:'.raw',
@@ -1105,31 +1105,31 @@ const PROJS={
     desc:'<strong>180-page annual publication</strong> for a contemporary art magazine. Grid system built from scratch. Typeface pairing creates tension between documentary and lyrical. Each spread works alone and in sequence.',
     tags:['EDITORIAL','PUBLICATION','GRID','PRINT','ART'],
     art:`
-  â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-  â”‚  â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆ  â”‚  BLANK           â”‚
-  â”‚  â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆ  â”‚  ISSUE 12        â”‚
-  â”‚          â”‚  â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€  â”‚
-  â”‚  IMAGE   â”‚  body copy text  â”‚
-  â”‚          â”‚  body copy text  â”‚
-  â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜`
+  ┌──────────┬──────────────────┐
+  │  ██████  │  BLANK           │
+  │  ██████  │  ISSUE 12        │
+  │          │  ──────────────  │
+  │  IMAGE   │  body copy text  │
+  │          │  body copy text  │
+  └──────────┴──────────────────┘`
   },
 
-  /* â”€â”€ NUOVI 10 PROGETTI â”€â”€ */
+  /* ── NUOVI 10 PROGETTI ── */
   packaging:{
     name:'Packaging System',ext:'.pkg',
     type:'PACKAGING / PRODUCT DESIGN',
     client:'Materia Viva',year:'2024',duration:'10 weeks',role:'Lead Designer',
-    desc:'End-to-end packaging system for a <strong>Milan-based organic cosmetics brand</strong>. Structural dieline engineering paired with a restrained typographic language. Every surface treated as a canvas â€” ink reduced to its essential minimum to respect the material.',
+    desc:'End-to-end packaging system for a <strong>Milan-based organic cosmetics brand</strong>. Structural dieline engineering paired with a restrained typographic language. Every surface treated as a canvas — ink reduced to its essential minimum to respect the material.',
     tags:['PACKAGING','PRODUCT','COSMETICS','PRINT','SYSTEM'],
     art:`
-  â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-  â”‚  â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—    â”‚
-  â”‚  â•‘  MATERIA VIVA        â•‘    â”‚
-  â”‚  â•‘  â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€  â•‘    â”‚
-  â”‚  â•‘  Vol. I â€” Essenziale â•‘    â”‚
-  â”‚  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•    â”‚
-  â”‚       [dieline v3.2]         â”‚
-  â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜`
+  ┌──────────────────────────────┐
+  │  ╔══════════════════════╗    │
+  │  ║  MATERIA VIVA        ║    │
+  │  ║  ──────────────────  ║    │
+  │  ║  Vol. I — Essenziale ║    │
+  │  ╚══════════════════════╝    │
+  │       [dieline v3.2]         │
+  └──────────────────────────────┘`
   },
   wayfinding:{
     name:'Wayfinding',ext:'.nav',
@@ -1138,74 +1138,74 @@ const PROJS={
     desc:'Comprehensive wayfinding and environmental graphic system for the <strong>Fiera Milano exhibition complex</strong>. A modular signage architecture spanning 14 pavilions and 345,000 square metres. Legibility tested across 7 languages simultaneously.',
     tags:['WAYFINDING','ENVIRONMENTAL','SIGNAGE','SYSTEM','EXHIBITION'],
     art:`
-  â†  PADIGLIONE  3    â†’
-  â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
-  â†‘  INGRESSO NORD
-  â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
-  â†“  PARCHEGGIO  P2
-  â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
-  â—  YOU ARE HERE`
+  ←  PADIGLIONE  3    →
+  ─────────────────────
+  ↑  INGRESSO NORD
+  ─────────────────────
+  ↓  PARCHEGGIO  P2
+  ─────────────────────
+  ●  YOU ARE HERE`
   },
   artbook:{
     name:'Art Book Vol.2',ext:'.pdf',
     type:'EDITORIAL / ART BOOK',
     client:'Triennale Milano',year:'2023',duration:'6 months',role:'Art Director & Designer',
-    desc:'Second volume of the institution\'s annual artist monograph series. <strong>228 pages celebrating Italian contemporary art.</strong> Archival photography, long-form essays, and full-bleed reproductions â€” each chapter designed as a distinct visual essay with its own rhythm and palette.',
+    desc:'Second volume of the institution\'s annual artist monograph series. <strong>228 pages celebrating Italian contemporary art.</strong> Archival photography, long-form essays, and full-bleed reproductions — each chapter designed as a distinct visual essay with its own rhythm and palette.',
     tags:['ART BOOK','EDITORIAL','INSTITUTION','PHOTOGRAPHY','PRINT'],
     art:`
-  â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-  â”‚         TRIENNALE           â”‚
-  â”‚         â”€â”€â”€â”€â”€â”€â”€â”€â”€           â”‚
-  â”‚   VOL.II â€” FORME DEL TEMPO  â”‚
-  â”‚                             â”‚
-  â”‚   228 pp.  Â·  IT/EN         â”‚
-  â”‚   Skira Editore, 2023       â”‚
-  â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜`
+  ┌─────────────────────────────┐
+  │         TRIENNALE           │
+  │         ─────────           │
+  │   VOL.II — FORME DEL TEMPO  │
+  │                             │
+  │   228 pp.  ·  IT/EN         │
+  │   Skira Editore, 2023       │
+  └─────────────────────────────┘`
   },
   poster:{
     name:'Poster Series',ext:'.ps',
     type:'GRAPHIC DESIGN / POSTER',
     client:'Alcatraz Milano',year:'2023',duration:'ongoing',role:'Graphic Designer',
-    desc:'Ongoing poster series for a leading Milan music venue. <strong>Each poster is a one-week sprint</strong>: concept, illustration, type, print â€” no committees, no compromises. 40+ posters produced, sold out at the door. A discipline in constrained creative velocity.',
+    desc:'Ongoing poster series for a leading Milan music venue. <strong>Each poster is a one-week sprint</strong>: concept, illustration, type, print — no committees, no compromises. 40+ posters produced, sold out at the door. A discipline in constrained creative velocity.',
     tags:['POSTER','MUSIC','PRINT','TYPOGRAPHY','SERIES'],
     art:`
-  â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆ
-  â–ˆâ–ˆ                  â–ˆâ–ˆ
-  â–ˆâ–ˆ  ALCATRAZ        â–ˆâ–ˆ
-  â–ˆâ–ˆ  MILANO          â–ˆâ–ˆ
-  â–ˆâ–ˆ  â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€  â–ˆâ–ˆ
-  â–ˆâ–ˆ  FRI 14 MAR      â–ˆâ–ˆ
-  â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆ`
+  ██████████████████████
+  ██                  ██
+  ██  ALCATRAZ        ██
+  ██  MILANO          ██
+  ██  ──────────────  ██
+  ██  FRI 14 MAR      ██
+  ██████████████████████`
   },
   uikit:{
     name:'UI Design Kit',ext:'.fig',
     type:'UI / DESIGN SYSTEM',
     client:'Vitale SaaS',year:'2024',duration:'4 months',role:'Lead UI Designer',
-    desc:'Comprehensive design system for a <strong>B2B SaaS platform</strong> used by 120,000+ monthly active users. 840 components across 6 variants, 3 density modes, full dark/light theming. Built with atomic design principles â€” scalable from mobile to 4K dashboard.',
+    desc:'Comprehensive design system for a <strong>B2B SaaS platform</strong> used by 120,000+ monthly active users. 840 components across 6 variants, 3 density modes, full dark/light theming. Built with atomic design principles — scalable from mobile to 4K dashboard.',
     tags:['UI','DESIGN SYSTEM','FIGMA','SAAS','COMPONENTS'],
     art:`
-  â”Œâ”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”
-  â”‚ Btn â”‚ Inp â”‚ Sel â”‚ Tog â”‚ primary
-  â”œâ”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”¤
-  â”‚ Btn â”‚ Inp â”‚ Sel â”‚ Tog â”‚ secondary
-  â”œâ”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”¤
-  â”‚ Btn â”‚ Inp â”‚ Sel â”‚ Tog â”‚ ghost
-  â””â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”˜`
+  ┌─────┬─────┬─────┬─────┐
+  │ Btn │ Inp │ Sel │ Tog │ primary
+  ├─────┼─────┼─────┼─────┤
+  │ Btn │ Inp │ Sel │ Tog │ secondary
+  ├─────┼─────┼─────┼─────┤
+  │ Btn │ Inp │ Sel │ Tog │ ghost
+  └─────┴─────┴─────┴─────┘`
   },
   logoarchive:{
     name:'Logo Archive',ext:'.ai',
     type:'IDENTITY / ARCHIVE',
-    client:'Self-initiated',year:'2022â€“2024',duration:'2 years',role:'Designer',
-    desc:'Personal archive of <strong>200+ logo marks</strong> developed across two years of freelance and studio work. Each mark distilled to its geometric essence â€” a living index of visual problem-solving. Catalogued by industry, formal approach, and conceptual framework.',
+    client:'Self-initiated',year:'2022–2024',duration:'2 years',role:'Designer',
+    desc:'Personal archive of <strong>200+ logo marks</strong> developed across two years of freelance and studio work. Each mark distilled to its geometric essence — a living index of visual problem-solving. Catalogued by industry, formal approach, and conceptual framework.',
     tags:['LOGO','ARCHIVE','IDENTITY','RESEARCH','PROCESS'],
     art:`
-  â—† â–³ â—‹ â–£ â—‰ â–² â—€ â–·
-  â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
-  â—ˆ â—‡ â—» â—¼ â—‘ â— â—’ â—“
-  â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
-  âœ¦ âœ§ â¬¡ â¬¢ â¬Ÿ â¬  âŠ• âŠ—
-  â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
-  200 marks Â· 2yr archive`
+  ◆ △ ○ ▣ ◉ ▲ ◀ ▷
+  ─────────────────────
+  ◈ ◇ ◻ ◼ ◑ ◐ ◒ ◓
+  ─────────────────────
+  ✦ ✧ ⬡ ⬢ ⬟ ⬠ ⊕ ⊗
+  ─────────────────────
+  200 marks · 2yr archive`
   },
   annual:{
     name:'Annual Report',ext:'.doc',
@@ -1216,61 +1216,61 @@ const PROJS={
     art:`
   MEDIOBANCA GROUP
   ANNUAL REPORT 2023
-  â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
-  Revenue   â–² +12.4%
-  â–‘â–‘â–‘â–‘â–‘â–‘â–‘â–‘â–‘â–‘â–‘â–‘â–‘â–‘â–“â–“â–“â–“
-  Assets    â–² +8.1%
-  â–‘â–‘â–‘â–‘â–‘â–‘â–‘â–‘â–‘â–‘â–‘â–‘â–“â–“â–“â–“â–“â–“
-  320 pp Â· IT/EN/FR`
+  ──────────────────
+  Revenue   ▲ +12.4%
+  ░░░░░░░░░░░░░░▓▓▓▓
+  Assets    ▲ +8.1%
+  ░░░░░░░░░░░░▓▓▓▓▓▓
+  320 pp · IT/EN/FR`
   },
   spatial:{
     name:'Spatial Brand',ext:'.3d',
     type:'SPATIAL / BRAND EXPERIENCE',
     client:'Gio Ponti Foundation',year:'2024',duration:'3 months',role:'Art Director',
-    desc:'Identity and spatial design for a permanent exhibition celebrating <strong>Gio Ponti\'s centenary</strong>. Environmental graphics, object labelling, and immersive typography â€” all derived from Ponti\'s own geometric vocabulary. Space as a medium, architecture as typography.',
+    desc:'Identity and spatial design for a permanent exhibition celebrating <strong>Gio Ponti\'s centenary</strong>. Environmental graphics, object labelling, and immersive typography — all derived from Ponti\'s own geometric vocabulary. Space as a medium, architecture as typography.',
     tags:['SPATIAL','EXHIBITION','3D','BRAND','HERITAGE'],
     art:`
-  â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
-  â•‘  GIO PONTI            â•‘
-  â•‘  1891 â€” 1979          â•‘
-  â•‘  â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€    â•‘
-  â•‘  FORMA Â· FUNZIONE     â•‘
-  â•‘  BELLEZZA             â•‘
-  â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•`
+  ╔═══════════════════════╗
+  ║  GIO PONTI            ║
+  ║  1891 — 1979          ║
+  ║  ─────────────────    ║
+  ║  FORMA · FUNZIONE     ║
+  ║  BELLEZZA             ║
+  ╚═══════════════════════╝`
   },
   digital:{
     name:'Digital Campaign',ext:'.js',
     type:'DIGITAL / INTERACTIVE CAMPAIGN',
     client:'Campari Group',year:'2024',duration:'2 months',role:'Creative Director',
-    desc:'Interactive digital campaign for <strong>Campari\'s 160th anniversary</strong>. Generative visuals driven by a custom JavaScript engine â€” each user interaction produces a unique aperitivo-tinted composition. Deployed across 12 markets, 34 million impressions in 3 weeks.',
+    desc:'Interactive digital campaign for <strong>Campari\'s 160th anniversary</strong>. Generative visuals driven by a custom JavaScript engine — each user interaction produces a unique aperitivo-tinted composition. Deployed across 12 markets, 34 million impressions in 3 weeks.',
     tags:['DIGITAL','INTERACTIVE','GENERATIVE','CAMPAIGN','WEB'],
     art:`
-  â•­â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â•®
-  â”‚  CAMPARI 160Â°       â”‚
-  â”‚  â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€  â”‚
-  â”‚  [click to mix]     â”‚
-  â”‚                     â”‚
-  â”‚  â–‘â–’â–“â–ˆ  RED  â–ˆâ–“â–’â–‘    â”‚
-  â”‚  generative Â· web   â”‚
-  â•°â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â•¯`
+  ╭─────────────────────╮
+  │  CAMPARI 160°       │
+  │  ─────────────────  │
+  │  [click to mix]     │
+  │                     │
+  │  ░▒▓█  RED  █▓▒░    │
+  │  generative · web   │
+  ╰─────────────────────╯`
   },
   identity2:{
     name:'Identity System',ext:'.run',
     type:'BRANDING / IDENTITY SYSTEM',
     client:'Vento Studio',year:'2024',duration:'12 weeks',role:'Lead Designer',
-    desc:'Comprehensive identity system for an <strong>emerging architecture and research practice</strong>. A mark built on tension â€” between permanence and change, structure and flow. The system extends across digital, print, and spatial applications with a single underlying geometric logic.',
+    desc:'Comprehensive identity system for an <strong>emerging architecture and research practice</strong>. A mark built on tension — between permanence and change, structure and flow. The system extends across digital, print, and spatial applications with a single underlying geometric logic.',
     tags:['IDENTITY','SYSTEM','ARCHITECTURE','PRINT','DIGITAL'],
     art:`
-  â•­â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â•®
-  â”‚  V  E  N  T  O       â”‚
-  â”‚  â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€  â”‚
-  â”‚  â•±â•²  studio          â”‚
-  â”‚  â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€  â”‚
-  â”‚  identity Â· 2024     â”‚
-  â•°â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â•¯`
+  ╭──────────────────────╮
+  │  V  E  N  T  O       │
+  │  ──────────────────  │
+  │  ╱╲  studio          │
+  │  ──────────────────  │
+  │  identity · 2024     │
+  ╰──────────────────────╯`
   },
 
-  /* â”€â”€ SYSTEM FILES â”€â”€ */
+  /* ── SYSTEM FILES ── */
   about:  {name:'About Me',        ext:'.md',  special:'about'},
   skills: {name:'Skills Manifest', ext:'.cfg', special:'skills'},
   contact:{name:'Contact',         ext:'.lnk', special:'contact'}
@@ -1315,8 +1315,8 @@ function projectGalleryHTML(id){
     <div class="project-gallery" data-gallery="${escH(id)}" data-index="0">
       <div class="gallery-viewport">
         <div class="gallery-track">${slides}</div>
-        <button class="gallery-btn prev" data-gal-move="-1" aria-label="Previous image">â€¹</button>
-        <button class="gallery-btn next" data-gal-move="1" aria-label="Next image">â€º</button>
+        <button class="gallery-btn prev" data-gal-move="-1" aria-label="Previous image">‹</button>
+        <button class="gallery-btn next" data-gal-move="1" aria-label="Next image">›</button>
       </div>
       <div class="gallery-meta">
         <span class="gallery-count">01 / ${String(PROJECT_IMAGES.length).padStart(2,'0')}</span>
@@ -1327,15 +1327,15 @@ function projectGalleryHTML(id){
 
 function projHTML(id){
   const p=PROJS[id];
-  if(!p) return `<div class="cres"><span class="r">ERROR: file not found â€” id: ${escH(id)}</span></div>`;
+  if(!p) return `<div class="cres"><span class="r">ERROR: file not found — id: ${escH(id)}</span></div>`;
 
   if(p.special==='about') return `
-    <div class="cres"><span class="a">// about_me.md</span><span class="d"> â€” last modified 2024.05.12</span></div>
+    <div class="cres"><span class="a">// about_me.md</span><span class="d"> — last modified 2024.05.12</span></div>
     <div style="margin:20px 0;padding-bottom:18px;border-bottom:1px solid var(--border)">
       <div style="font-size:clamp(20px,5vw,28px);color:var(--fg);letter-spacing:.04em;margin-bottom:4px">Ludovico Morando</div>
-      <div style="font-size:13px;color:var(--accent);letter-spacing:.18em">SENIOR DESIGNER â€” MILAN, ITALY</div>
+      <div style="font-size:13px;color:var(--accent);letter-spacing:.18em">SENIOR DESIGNER — MILAN, ITALY</div>
     </div>
-    <div class="pdesc">Designer working at the intersection of <strong>brand identity</strong>, <strong>art direction</strong>, and <strong>editorial design</strong> â€” with a deep obsession for typographic systems and visual thinking. Passionate about building identities that hold up at every scale, from a stamp to a skyscraper.</div>
+    <div class="pdesc">Designer working at the intersection of <strong>brand identity</strong>, <strong>art direction</strong>, and <strong>editorial design</strong> — with a deep obsession for typographic systems and visual thinking. Passionate about building identities that hold up at every scale, from a stamp to a skyscraper.</div>
     <div style="margin:20px 0">
       <div style="font-size:11px;color:var(--dim);letter-spacing:.14em;margin-bottom:12px;padding-bottom:6px;border-bottom:1px solid var(--border)">EXPERIENCE</div>
       <div class="c-link"><span class="c-label">NOW</span><span class="c-val">Senior Designer <span style="color:var(--dim)">@</span> <span style="color:var(--accent)">Monolab Studio</span></span></div>
@@ -1343,15 +1343,15 @@ function projHTML(id){
     </div>
     <div style="margin:20px 0">
       <div style="font-size:11px;color:var(--dim);letter-spacing:.14em;margin-bottom:12px;padding-bottom:6px;border-bottom:1px solid var(--border)">EDUCATION</div>
-      <div class="c-link"><span class="c-label">MA</span><span class="c-val">Visual Communication â€” <span style="color:var(--accent)">ISIA Urbino</span></span></div>
-      <div class="c-link"><span class="c-label">POST</span><span class="c-val">Type Design â€” <span style="color:var(--accent)">Type@Cooper, NYC</span></span></div>
+      <div class="c-link"><span class="c-label">MA</span><span class="c-val">Visual Communication — <span style="color:var(--accent)">ISIA Urbino</span></span></div>
+      <div class="c-link"><span class="c-label">POST</span><span class="c-val">Type Design — <span style="color:var(--accent)">Type@Cooper, NYC</span></span></div>
     </div>
     <div style="margin-top:20px;padding-top:16px;border-top:1px solid var(--border)">
-      <div class="cres" style="font-size:12px"><span class="d">open to:</span> brand identity Â· art direction Â· consulting</div>
+      <div class="cres" style="font-size:12px"><span class="d">open to:</span> brand identity · art direction · consulting</div>
     </div>`;
 
   if(p.special==='skills') return `
-    <div class="cres"><span class="a">// skills_manifest.cfg</span><span class="d"> â€” compiled 2024.05</span></div>
+    <div class="cres"><span class="a">// skills_manifest.cfg</span><span class="d"> — compiled 2024.05</span></div>
     <div style="margin:20px 0">
       <div style="font-size:11px;color:var(--dim);letter-spacing:.14em;margin-bottom:14px;padding-bottom:6px;border-bottom:1px solid var(--border)">[DESIGN]</div>
       ${skillBar('Brand Identity',100)}${skillBar('Typography',100)}${skillBar('Art Direction',88)}${skillBar('Editorial Design',82)}${skillBar('Motion Design',72)}
@@ -1362,13 +1362,13 @@ function projHTML(id){
     </div>
     <div style="margin:20px 0">
       <div style="font-size:11px;color:var(--dim);letter-spacing:.14em;margin-bottom:12px;padding-bottom:6px;border-bottom:1px solid var(--border)">[LANGUAGES]</div>
-      <div class="c-link"><span class="c-label" style="width:80px">ITALIAN</span><span class="c-val"><span style="color:var(--accent)">â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆ</span> native</span></div>
-      <div class="c-link"><span class="c-label" style="width:80px">ENGLISH</span><span class="c-val"><span style="color:var(--accent)">â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–‘</span> fluent</span></div>
-      <div class="c-link"><span class="c-label" style="width:80px">FRENCH</span><span class="c-val"><span style="color:var(--accent)">â–ˆâ–ˆâ–ˆâ–ˆâ–‘â–‘â–‘â–‘â–‘â–‘</span> basics</span></div>
+      <div class="c-link"><span class="c-label" style="width:80px">ITALIAN</span><span class="c-val"><span style="color:var(--accent)">██████████</span> native</span></div>
+      <div class="c-link"><span class="c-label" style="width:80px">ENGLISH</span><span class="c-val"><span style="color:var(--accent)">█████████░</span> fluent</span></div>
+      <div class="c-link"><span class="c-label" style="width:80px">FRENCH</span><span class="c-val"><span style="color:var(--accent)">████░░░░░░</span> basics</span></div>
     </div>`;
 
   if(p.special==='contact') return `
-    <div class="cres"><span class="a">// contact.lnk</span><span class="d"> â€” always open</span></div>
+    <div class="cres"><span class="a">// contact.lnk</span><span class="d"> — always open</span></div>
     <div style="margin:20px 0;padding-bottom:18px;border-bottom:1px solid var(--border)">
       <div style="font-size:clamp(17px,4vw,22px);color:var(--fg);margin-bottom:5px">Get in touch</div>
       <div style="font-size:13px;color:var(--mid)">Available for freelance &amp; consulting projects</div>
@@ -1385,8 +1385,8 @@ function projHTML(id){
     </div>
     <div style="margin-top:20px;padding:14px;border:1px solid var(--border);background:rgba(0,255,136,.03)">
       <div style="font-size:12px;color:var(--mid);line-height:1.9">
-        open to: <span style="color:var(--fg)">brand identity Â· art direction Â· consulting</span><br>
-        based in: <span style="color:var(--accent)">milan, italy</span> â€” works remote worldwide
+        open to: <span style="color:var(--fg)">brand identity · art direction · consulting</span><br>
+        based in: <span style="color:var(--accent)">milan, italy</span> — works remote worldwide
       </div>
     </div>`;
 
@@ -1407,9 +1407,9 @@ function projHTML(id){
     <div class="ptags">${p.tags.map(t=>`<span class="ptag">${t}</span>`).join('')}</div>`;
 }
 
-/* â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+/* ═══════════════════════════════════════
    WINDOW MANAGER
-â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */
+═══════════════════════════════════════ */
 const wlayer=$('wlayer');
 let topZ=10;
 const wins=new Map();
@@ -1434,11 +1434,11 @@ function openWin(id){
   el.innerHTML=`
     <div class="win-bar" data-handle>
       <div class="wbtns">
-        <div class="wb close" data-close title="close">Ã—</div>
-        <div class="wb mini"  data-mini title="min">â”€</div>
-        <div class="wb maxi"  data-maxi title="max">â–¡</div>
+        <div class="wb close" data-close title="close">×</div>
+        <div class="wb mini"  data-mini title="min">─</div>
+        <div class="wb maxi"  data-maxi title="max">□</div>
       </div>
-      <div class="win-title"><span>${escH(p.name)}${escH(p.ext)}</span> â€” LM_OS</div>
+      <div class="win-title"><span>${escH(p.name)}${escH(p.ext)}</span> — LM_OS</div>
     </div>
     <div class="win-body">${projHTML(id)}</div>`;
   wlayer.appendChild(el);
@@ -1504,9 +1504,9 @@ function closeWin(el,id){
   el.addEventListener('animationend',()=>{el.remove();wins.delete(id);},{once:true});
 }
 
-/* â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+/* ═══════════════════════════════════════
    WINDOW DRAG
-â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */
+═══════════════════════════════════════ */
 function makeDraggable(win){
   const handle=win.querySelector('[data-handle]');
   let drag=false,ox=0,oy=0,sl=0,st=0;
@@ -1534,9 +1534,9 @@ function makeDraggable(win){
   document.addEventListener('touchend',end);
 }
 
-/* â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+/* ═══════════════════════════════════════
    COMMAND WINDOWS
-â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */
+═══════════════════════════════════════ */
 let cmdC=0;
 function cmdWin(id,title,html){
   if(wins.has(id)){closeWin(wins.get(id),id);setTimeout(()=>_mkCmd(id,title,html),200);return;}
@@ -1558,9 +1558,9 @@ function _mkCmd(id,title,html){
   el.innerHTML=`
     <div class="win-bar" data-handle>
       <div class="wbtns">
-        <div class="wb close" data-close>Ã—</div>
-        <div class="wb mini"  data-mini>â”€</div>
-        <div class="wb maxi"  data-maxi>â–¡</div>
+        <div class="wb close" data-close>×</div>
+        <div class="wb mini"  data-mini>─</div>
+        <div class="wb maxi"  data-maxi>□</div>
       </div>
       <div class="win-title"><span>${escH(title)}</span></div>
     </div>
@@ -1571,26 +1571,26 @@ function _mkCmd(id,title,html){
   if(!isMob()) makeDraggable(el);
 }
 
-/* â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
-   MODIFICA 1 â€” ICON DRAG & DROP
-   â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+/* ═══════════════════════════════════════
+   MODIFICA 1 — ICON DRAG & DROP
+   ─────────────────────────────────────
    Logica:
-   Â· mousedown/touchstart su un'icona avvia il drag dopo 150ms
+   · mousedown/touchstart su un'icona avvia il drag dopo 150ms
      di hold (distingue tap da drag)
-   Â· durante il move: posizione diretta via left/top (no transform)
-   Â· al drop: collision check con bounding box di tutte le altre icone
+   · durante il move: posizione diretta via left/top (no transform)
+   · al drop: collision check con bounding box di tutte le altre icone
      con margine ICON_GAP.
-     â€“ Se libero â†’ la posizione Ã¨ confermata, aggiornando il registro.
-     â€“ Se collide â†’ snap-back fluido alla posizione precedente.
-   Â· I confini del canvas sono rispettati in modo rigido.
-â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */
+     – Se libero → la posizione è confermata, aggiornando il registro.
+     – Se collide → snap-back fluido alla posizione precedente.
+   · I confini del canvas sono rispettati in modo rigido.
+═══════════════════════════════════════ */
 (function initIconDrag(){
   const canvas=$('icon-canvas');
   const ICON_W=118, ICON_H=96, ICON_GAP=10;
   /* tolleranza click vs drag in pixel */
   const DRAG_THRESHOLD=6;
 
-  /* Registro posizioni correnti {id â†’ {x,y}} */
+  /* Registro posizioni correnti {id → {x,y}} */
   const positions=new Map();
 
   function getAllBounds(exclude){
@@ -1652,7 +1652,7 @@ function _mkCmd(id,title,html){
 
       /* Hold timer: avvia il drag solo dopo 150ms di pressione tenuta */
       holdTimer=setTimeout(()=>startDrag(e),150);
-      /* Se si muove oltre la soglia prima del timer â†’ forza drag subito */
+      /* Se si muove oltre la soglia prima del timer → forza drag subito */
       document.addEventListener('mousemove', onEarlyMove, {passive:true});
       document.addEventListener('touchmove', onEarlyMove, {passive:true});
       document.addEventListener('mouseup',  onPointerUpEarly, {once:true});
@@ -1683,7 +1683,7 @@ function _mkCmd(id,title,html){
       icon.classList.add('icon-dragging');
       icon.style.zIndex=800;
       document.body.style.userSelect='none';
-      /* rimuovi transition durante il drag per fluiditÃ  massima */
+      /* rimuovi transition durante il drag per fluidità massima */
       icon.style.transition='border-color .1s,background .1s,box-shadow .1s,opacity .1s';
 
       if(!isTouch()) curEl.classList.add('dragging-icon');
@@ -1717,7 +1717,7 @@ function _mkCmd(id,title,html){
       icon.style.zIndex='';
 
       if(collides(dropX,dropY,icon)){
-        /* COLLISIONE â€” prova posizioni libere vicine prima di tornare indietro */
+        /* COLLISIONE — prova posizioni libere vicine prima di tornare indietro */
         const free=findNearestFree(dropX,dropY,icon);
         if(free){
           /* snap alla posizione libera trovata */
@@ -1726,17 +1726,17 @@ function _mkCmd(id,title,html){
           icon.style.top =free.y+'px';
           lastX=free.x; lastY=free.y;
           setTimeout(()=>icon.classList.remove('snapping'),280);
-          toast('â†³ snapped to nearest free slot');
+          toast('↳ snapped to nearest free slot');
         } else {
-          /* nessuna posizione libera trovata â†’ torna alla precedente */
+          /* nessuna posizione libera trovata → torna alla precedente */
           icon.classList.add('snapping');
           icon.style.left=lastX+'px';
           icon.style.top =lastY+'px';
           setTimeout(()=>icon.classList.remove('snapping'),280);
-          toast('â†³ position occupied â€” reverted');
+          toast('↳ position occupied — reverted');
         }
       } else {
-        /* posizione libera â†’ confermata */
+        /* posizione libera → confermata */
         lastX=dropX; lastY=dropY;
         toast('');/* nessun toast; silenzioso */
       }
@@ -1745,7 +1745,7 @@ function _mkCmd(id,title,html){
       icon.style.transition='';
     }
 
-    /* Cerca posizione libera piÃ¹ vicina in spirale crescente */
+    /* Cerca posizione libera più vicina in spirale crescente */
     function findNearestFree(dropX,dropY,icon){
       const steps=[14,28,42,60,80,110,150];
       const angles=16;
@@ -1766,19 +1766,19 @@ function _mkCmd(id,title,html){
   }
 
   /* Attacca il drag a tutte le icone presenti.
-     Viene chiamato dopo placeIconsRandomly â†’ animateDesktopIcons. */
+     Viene chiamato dopo placeIconsRandomly → animateDesktopIcons. */
   window._initIconDragAll=function(){
     if(isMob()) return;
     canvas.querySelectorAll('.desk-icon').forEach(ic=>attachIconDrag(ic));
   };
 })();
 
-/* â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+/* ═══════════════════════════════════════
    ICON CLICK / DOUBLE-CLICK INTERACTIONS
-   (coesiste con il drag â€” la soglia di movimento
+   (coesiste con il drag — la soglia di movimento
    e il hold timer garantiscono che un singolo tap
    senza spostamento apra la finestra normalmente)
-â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */
+═══════════════════════════════════════ */
 let tapLast=null, tapTimer=null;
 
 document.querySelectorAll('.desk-icon').forEach(icon=>{
@@ -1793,16 +1793,16 @@ document.querySelectorAll('.desk-icon').forEach(icon=>{
       if(!touchMoved){ selectIcon(icon); openWin(id); }
     });
   } else {
-    /* DESKTOP: 1Â° click = seleziona, 2Â° click entro 500ms = apri */
+    /* DESKTOP: 1° click = seleziona, 2° click entro 500ms = apri */
     icon.addEventListener('click', e=>{
-      /* Se Ã¨ avvenuto un drag significativo, ignora il click */
+      /* Se è avvenuto un drag significativo, ignora il click */
       if(icon.classList.contains('icon-dragging')) return;
       if(tapLast===id){
         clearTimeout(tapTimer); tapLast=null; openWin(id);
       } else {
         selectIcon(icon); tapLast=id;
         tapTimer=setTimeout(()=>tapLast=null,500);
-        toast(`${id} selected â€” double-click to open`);
+        toast(`${id} selected — double-click to open`);
       }
     });
   }
@@ -1813,9 +1813,9 @@ function selectIcon(icon){
   icon.classList.add('sel');
 }
 
-/* â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+/* ═══════════════════════════════════════
    LEFT PANEL INTERACTIONS
-â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */
+═══════════════════════════════════════ */
 document.querySelectorAll('.lp-file').forEach(row=>{
   const id=row.dataset.open;
   row.addEventListener('click',()=>{
@@ -1829,9 +1829,9 @@ document.querySelectorAll('.lp-cmd').forEach(btn=>{
   btn.addEventListener('click',()=>{ const cmd=btn.dataset.cmd; if(cmd) runCmd(cmd); });
 });
 
-/* â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+/* ═══════════════════════════════════════
    TERMINAL
-â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */
+═══════════════════════════════════════ */
 const termInput=$('term-input'), termBar=$('termbar');
 termBar.addEventListener('click',()=>termInput.focus());
 termInput.addEventListener('keydown',e=>{
@@ -1845,7 +1845,7 @@ document.addEventListener('keydown',e=>{
 const CMDS={
   help:()=>cmdWin('help','// help',`<div class="cres">
     <span class="a">COMMANDS</span><br>
-    <span class="d">â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€</span><br>
+    <span class="d">────────────────────────────</span><br>
     <span class="f">projects</span>  list all projects<br>
     <span class="f">about</span>     open about file<br>
     <span class="f">skills</span>    show skills config<br>
@@ -1854,12 +1854,12 @@ const CMDS={
     <span class="f">ls</span>        list filesystem<br>
     <span class="f">whoami</span>    user information<br>
     <span class="f">hello</span>     greet the system<br>
-    <span class="d">â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€</span><br>
+    <span class="d">────────────────────────────</span><br>
     <span class="d">${isTouch()||isMob()?'tap any file icon to open it':'double-click any file to open it'}</span><br>
   </div>`),
   projects:()=>cmdWin('proj','// projects/',`<div class="cres">
     <span class="a">$ ls -la /projects/</span><br>
-    <span class="d">â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€</span><br>
+    <span class="d">──────────────────────────────────────</span><br>
     <span class="f">brand_identity.exe   </span><span class="d">4.2K  2024</span><br>
     <span class="f">visual_campaign.sys  </span><span class="d">8.7K  2024</span><br>
     <span class="f">type_experiments.txt </span><span class="d">2.1K  2023</span><br>
@@ -1875,7 +1875,7 @@ const CMDS={
     <span class="f">spatial_brand.3d     </span><span class="d">6.1K  2024</span><br>
     <span class="f">digital_campaign.js  </span><span class="d">4.9K  2024</span><br>
     <span class="f">identity_system.run  </span><span class="d">5.5K  2024</span><br>
-    <span class="d">â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€</span><br>
+    <span class="d">──────────────────────────────────────</span><br>
     <span class="d">15 files, 131.1K total</span><br>
   </div>`),
   about:  ()=>openWin('about'),
@@ -1891,18 +1891,18 @@ const CMDS={
     shell: /bin/figma<br>
     home: /milan/italy<br>
     employer: <span class="f">Monolab Studio</span><br>
-    prev: <span class="f">Fabrique Â· Born05 Â· Dumbar</span><br>
+    prev: <span class="f">Fabrique · Born05 · Dumbar</span><br>
     status: <span class="a">available for freelance</span><br>
   </div>`),
   hello:()=>{
     toast('hello, world.');
     cmdWin('hello','// greeting',`<div class="cres">
-      â–ˆâ–ˆâ•—  â–ˆâ–ˆâ•—â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ•—â–ˆâ–ˆâ•—     â–ˆâ–ˆâ•—      â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ•— <br>
-      â–ˆâ–ˆâ•‘  â–ˆâ–ˆâ•‘â–ˆâ–ˆâ•”â•â•â•â•â•â–ˆâ–ˆâ•‘     â–ˆâ–ˆâ•‘     â–ˆâ–ˆâ•”â•â•â•â–ˆâ–ˆâ•—<br>
-      â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ•‘â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ•—  â–ˆâ–ˆâ•‘     â–ˆâ–ˆâ•‘     â–ˆâ–ˆâ•‘   â–ˆâ–ˆâ•‘<br>
-      â–ˆâ–ˆâ•”â•â•â–ˆâ–ˆâ•‘â–ˆâ–ˆâ•”â•â•â•  â–ˆâ–ˆâ•‘     â–ˆâ–ˆâ•‘     â–ˆâ–ˆâ•‘   â–ˆâ–ˆâ•‘<br>
-      â–ˆâ–ˆâ•‘  â–ˆâ–ˆâ•‘â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ•—â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ•—â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ•—â•šâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ•”â•<br>
-      â•šâ•â•  â•šâ•â•â•šâ•â•â•â•â•â•â•â•šâ•â•â•â•â•â•â•â•šâ•â•â•â•â•â•â• â•šâ•â•â•â•â•â• <br><br>
+      ██╗  ██╗███████╗██╗     ██╗      ██████╗ <br>
+      ██║  ██║██╔════╝██║     ██║     ██╔═══██╗<br>
+      ███████║█████╗  ██║     ██║     ██║   ██║<br>
+      ██╔══██║██╔══╝  ██║     ██║     ██║   ██║<br>
+      ██║  ██║███████╗███████╗███████╗╚██████╔╝<br>
+      ╚═╝  ╚═╝╚══════╝╚══════╝╚══════╝ ╚═════╝ <br><br>
       <span class="d">thanks for visiting.</span><br>
       <span class="d">look around. open some files.</span><br>
     </div>`);
@@ -1923,9 +1923,9 @@ function runCmd(cmd){
   }
 }
 
-/* â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+/* ═══════════════════════════════════════
    RESIZE
-â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */
+═══════════════════════════════════════ */
 let wasMob=isMob();
 window.addEventListener('resize',()=>{
   const nowMob=isMob();
@@ -1937,13 +1937,13 @@ window.addEventListener('resize',()=>{
   }
 });
 
-/* â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+/* ═══════════════════════════════════════
    Override placeIconsRandomly per inizializzare
    il drag dopo il posizionamento.
    Attendiamo che animateDesktopIcons sia completa
    (l'ultima icona appare dopo 480 + 14*70 = 1460ms)
    poi attiviamo il drag engine.
-â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */
+═══════════════════════════════════════ */
 const _origPlaceIcons=placeIconsRandomly;
 /* ridefiniamo la funzione locale */
 window.placeIconsRandomly=function placeIconsRandomly(){
@@ -1981,4 +1981,3 @@ setVh(); window.addEventListener('resize',setVh);
 </script>
 </body>
 </html>
-
