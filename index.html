@@ -1169,9 +1169,15 @@ function projHTML(id){
 
   if(p.special==='about') return `
     <div class="cres"><span class="a">// about_me.md</span><span class="d"> - updated from portfolio 2026</span></div>
-    <div style="margin:20px 0;padding-bottom:18px;border-bottom:1px solid var(--border)">
-      <div style="font-size:clamp(20px,5vw,28px);color:var(--fg);letter-spacing:.04em;margin-bottom:4px">Ludovico Morando Guido</div>
-      <div style="font-size:13px;color:var(--accent);letter-spacing:.16em">FASHION & ACCESSORY DESIGNER - MILAN, ITALY</div>
+    <div style="display:grid;grid-template-columns:minmax(150px,210px) 1fr;gap:18px;align-items:end;margin:20px 0;padding-bottom:18px;border-bottom:1px solid var(--border)">
+      <div style="border:1px solid var(--border);background:#050505;padding:7px;box-shadow:0 0 22px rgba(0,255,136,.06)">
+        <img src="assets/ludovico-about.jpg" alt="Ludovico Morando" loading="lazy" style="display:block;width:100%;aspect-ratio:1/1;object-fit:cover;filter:grayscale(1);">
+      </div>
+      <div>
+        <div style="font-size:clamp(20px,5vw,28px);color:var(--fg);letter-spacing:.04em;margin-bottom:4px">Ludovico Morando Guido</div>
+        <div style="font-size:13px;color:var(--accent);letter-spacing:.16em">FASHION & ACCESSORY DESIGNER - MILAN, ITALY</div>
+        <div class="cres" style="margin-top:14px;font-size:12px"><span class="d">profile image:</span> Ludovico Morando</div>
+      </div>
     </div>
     <div class="pdesc">With a background in graphic communication and a specialization in Fashion Design focused on accessories, Ludovico builds a visual world rooted in underground culture: hip-hop, punk, psychedelia, cinema and visual arts. Research and analysis are the starting point of every project, shaping a dramatic, layered and often deliberately unsettling language.</div>
     <div class="pdesc">His experience in fashion combines design practice with event organization. As Backstage Director for Show Division, he worked on shows for designers including Tokyo James, Raf Simons, Sagaboi, Phan Dang Hoang and Maxivive, developing coordination, problem solving and pressure-management skills.</div>
